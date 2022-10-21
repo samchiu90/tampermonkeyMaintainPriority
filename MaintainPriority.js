@@ -28,9 +28,12 @@
       output = noiseBuffer.getChannelData(0);
 
     for (var i = 0; i < length; i++) {
-      output[i] = (Math.random() * 2 - 1) / 100;
+      output[i] = (Math.random() * 2 - 1) / 1;
     }
 
+    for (var j = 0; j < length; j++) {
+      output[j] = output[j / 2];
+    }
     const blob = bufferToWave(noiseBuffer, length);
     return URL.createObjectURL(blob);
   }
@@ -120,16 +123,19 @@
 
     let DivNode = document.createElement("div");
     DivNode.setAttribute("id", "PriorityController_audio");
-
+    DivNode.style = `position: absolute;
+    top: 0 ;
+    z-index: 1000;
+    background-color: white;`;
     let InputNode = document.createElement("input");
     InputNode.type = "checkbox";
     InputNode.setAttribute("id", "Priority_checkbox");
     InputNode.value = false;
+    InputNode.style = "color: black;";
 
     let LabelNode = document.createElement("label");
-
     LabelNode.setAttribute("for", "Priority_checkbox");
-
+    LabelNode.style = "color: black;";
     LabelNode.innerHTML = "Maintain Priority";
 
     DivNode.appendChild(InputNode);
