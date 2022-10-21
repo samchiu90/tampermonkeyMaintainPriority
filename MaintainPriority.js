@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         MaintainPriority
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.3
 // @description  Maintain tab Priority by playing WhiteNoise
-// @author       You
-// @match        *://*/*
+// @author       samchiu90
+// @match        *://*/* 
 // @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
 // @grant        none
 // ==/UserScript==
