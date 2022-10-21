@@ -4,7 +4,7 @@
 // @version      0.3
 // @description  Maintain tab Priority by playing WhiteNoise
 // @author       samchiu90
-// @match        *://*/* 
+// @match        *://*/*
 // @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
 // @grant        none
 // ==/UserScript==
